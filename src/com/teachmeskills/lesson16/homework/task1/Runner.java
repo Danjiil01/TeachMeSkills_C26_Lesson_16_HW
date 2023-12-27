@@ -1,6 +1,7 @@
 package com.teachmeskills.lesson16.homework.task1;
 
 import com.teachmeskills.lesson16.homework.task1.client.Client;
+import com.teachmeskills.lesson16.homework.task1.constant.IPassportNumber;
 import com.teachmeskills.lesson16.homework.task1.order.Order;
 
 import java.util.*;
@@ -12,13 +13,11 @@ public class Runner {
         Client client1 = new Client(
                 "01.01.2024",
                 "John",
-                25,
-                "MP93829489");
+                25);
         Client client2 = new Client(
                 "02.01.2024",
                 "Alice",
-                30,
-                "ER91040124");
+                30);
 
         // Добавление нескольких заказов для каждого клиента
         client1.addOrder(new Order(10.0, "Product 1"));
@@ -31,8 +30,8 @@ public class Runner {
         Map<String, Client> clientMap = new HashMap<>();
 
         // Добавление клиентов в Map-коллекцию
-        clientMap.put("jdkas02839", client1);
-        clientMap.put("02348JHnal", client2);
+        clientMap.put(IPassportNumber.PASSPORT_CLIENT_1, client1);
+        clientMap.put(IPassportNumber.PASSPORT_CLIENT_2, client2);
 
         /**
          * -----------------------------------------------------------------------------------------------

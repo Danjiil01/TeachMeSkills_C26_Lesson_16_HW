@@ -8,14 +8,12 @@ public class Client {
     private String registrationDate;
     private String name;
     private int age;
-    private String passportNumber;
     private ArrayList<Order> orders;
 
-    public Client(String registrationDate, String name, int age, String passportNumber) {
+    public Client(String registrationDate, String name, int age) {
         this.registrationDate = registrationDate;
         this.name = name;
         this.age = age;
-        this.passportNumber = passportNumber;
         this.orders = new ArrayList<>();
     }
 
@@ -45,14 +43,6 @@ public class Client {
 
     public void setAge(int age) {
         this.age = age;
-    }
-
-    public String getPassportNumber() {
-        return passportNumber;
-    }
-
-    public void setPassportNumber(String passportNumber) {
-        this.passportNumber = passportNumber;
     }
 
     public ArrayList<Order> getOrders() {
